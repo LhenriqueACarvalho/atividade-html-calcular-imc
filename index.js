@@ -6,7 +6,7 @@ function calculaimc() {
 
     if (isNaN(imc)) return;
 
-    let tipo = "Obesidade";
+    let tipo = "";
 
     switch (true) {
         case (imc < 18.5):
@@ -17,8 +17,9 @@ function calculaimc() {
             break;
         case (imc <= 30):
             tipo = "Sobrepeso";
+            break;
         case (imc > 30):
-            tipo = "Sobrepeso";
+            tipo = "Obesidade";
             break;
     }
 
