@@ -12,10 +12,12 @@ function calculaimc() {
         case (imc < 18.5):
             tipo = "Magreza";
             break;
-        case (imc < 24.9):
+        case (imc <= 24.9):
             tipo = "Normal";
             break;
-        case (imc < 30):
+        case (imc <= 30):
+            tipo = "Sobrepeso";
+        case (imc > 30):
             tipo = "Sobrepeso";
             break;
     }
